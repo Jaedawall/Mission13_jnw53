@@ -5,11 +5,11 @@ function MovieList() {
   return (
     <>
       <div>
-        <h1>Joel Hilton's Movie Collection</h1>
+        <h1 className="text-center">Joel Hilton's Movie Collection</h1>
       </div>
       <div>
-        <table className="table table-bordered">
-          <thead>
+        <table className="table table-bordered table-striped">
+          <thead className="text-center">
             <tr>
               <th>Title</th>
               <th>Year</th>
@@ -19,7 +19,7 @@ function MovieList() {
               <th>Edited</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             {Movies.map((movie) => (
               <tr>
                 <td>{movie.Title}</td>
