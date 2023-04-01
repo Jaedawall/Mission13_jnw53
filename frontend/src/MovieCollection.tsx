@@ -1,7 +1,5 @@
 function Collection() {
-    return (
-     
-    );
-  }
-  
-  export default Collection;
+  return <h1>This is the movie collection page</h1>;
+}
+
+export default Collection;

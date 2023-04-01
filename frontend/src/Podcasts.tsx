@@ -1,8 +1,5 @@
 function Link() {
-    return (
-      
-    );
-  }
-  
+  return <h1>This is the podcasts page</h1>;
+}
 
 export default Link;
