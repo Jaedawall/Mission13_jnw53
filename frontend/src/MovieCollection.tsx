@@ -1,6 +1,5 @@
-import data from './MovieDataSample.json';
-
-const Movies = data.MovieDataSample;
+import data from './MovieData.json';
+const Movies = data.MovieData;
 
 function MovieList() {
   return (
@@ -9,7 +8,7 @@ function MovieList() {
         <h1>Joel Hilton's Movie Collection</h1>
       </div>
       <div>
-        <table>
+        <table className="table table-bordered">
           <thead>
             <tr>
               <th>Title</th>

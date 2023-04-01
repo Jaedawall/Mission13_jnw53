@@ -1,10 +1,11 @@
 import styles from './Home.module.css';
-
-function TopBanner() {
+import Navbar from './Navbar';
+function LandingPage() {
   return (
     <>
+      <Navbar />
       <div className="row"></div>
-      <div className="col-3">
+      <div>
         <img src="./JoelHiltonHeadshot.jpg" alt="JoelHeadshot" />
       </div>
       <div className="col align-self-center ">
@@ -14,4 +15,4 @@ function TopBanner() {
   );
 }
 
-export default TopBanner;
+export default LandingPage;
