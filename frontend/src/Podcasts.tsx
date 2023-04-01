@@ -1,5 +1,5 @@
 function Link() {
-  return <h1>This is the podcasts page</h1>;
+  return <a href="https://baconsale.com/">My podcasts</a>;
 }
 
 export default Link;

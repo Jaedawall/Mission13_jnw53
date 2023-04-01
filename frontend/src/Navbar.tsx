@@ -9,10 +9,10 @@ function Navbar() {
           <Link to="./Home">Home</Link>
         </li>
         <li>
-          <Link to="./Podcasts">Blogs</Link>
+          <Link to="./Podcasts">Podcasts</Link>
         </li>
         <li>
-          <Link to="./MovieCollection">Contact</Link>
+          <Link to="./MovieCollection">Movie Collection</Link>
         </li>
       </ul>
     </nav>
