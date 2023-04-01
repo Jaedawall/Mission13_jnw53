@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import TopBanner from './Home';
 import Link from './Podcasts';
-import Collection from './MovieCollection';
+import MovieList from './MovieCollection';
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route path="Home" element={<TopBanner />} />
           <Route path="Podcasts" element={<Link />} />
-          <Route path="MovieCollection" element={<Collection />} />
+          <Route path="MovieCollection" element={<MovieList />} />
         </Route>
       </Routes>
     </BrowserRouter>
