@@ -31,6 +31,7 @@ namespace API
             services.AddDbContext<MovieDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("MovieDbConnection"))
             );
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +41,8 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(p => p.WithOrigins("http://localhost:4000"));
 
             app.UseHttpsRedirection();
 

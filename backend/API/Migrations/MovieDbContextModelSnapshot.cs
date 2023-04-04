@@ -30,6 +30,12 @@ namespace API.Migrations
                     b.Property<string>("Edited")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("LentTo")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Notes")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Rating")
                         .HasColumnType("TEXT");
 

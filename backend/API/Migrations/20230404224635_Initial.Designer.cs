@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(MovieDbContext))]
-    [Migration("20230404031635_Initial")]
+    [Migration("20230404224635_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,12 @@ namespace API.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Edited")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LentTo")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Notes")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Rating")

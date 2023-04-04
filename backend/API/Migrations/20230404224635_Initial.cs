@@ -12,12 +12,14 @@ namespace API.Migrations
                 {
                     MovieId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    Category = table.Column<string>(nullable: true),
                     Title = table.Column<string>(nullable: true),
                     Year = table.Column<int>(nullable: false),
                     Director = table.Column<string>(nullable: true),
                     Rating = table.Column<string>(nullable: true),
-                    Category = table.Column<string>(nullable: true),
-                    Edited = table.Column<string>(nullable: true)
+                    Edited = table.Column<string>(nullable: true),
+                    LentTo = table.Column<string>(nullable: true),
+                    Notes = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
