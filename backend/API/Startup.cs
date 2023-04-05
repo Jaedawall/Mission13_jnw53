@@ -42,7 +42,7 @@ namespace API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(p => p.WithOrigins("http://localhost:4000"));
+            app.UseCors(p => p.WithOrigins("http://localhost:3000"));
 
             app.UseHttpsRedirection();
 

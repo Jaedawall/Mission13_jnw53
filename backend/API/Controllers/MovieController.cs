@@ -16,7 +16,10 @@ namespace API.Controllers
         }
         public IEnumerable<MovieCollection> Get()
         {
-            return context.Movies.ToArray();
+            return context.Movies
+                .Where(x => x.Edited == "Yes")
+                .OrderBy(x => x.Title)
+                .ToArray();
         }
     }
 }
